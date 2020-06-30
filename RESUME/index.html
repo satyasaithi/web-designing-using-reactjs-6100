@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100vh;
+			font-family: 'Roboto', sans-serif;
+			color: #7A7575;
+			user-select: none;
+		}
+		.link:after{
+         content: '';
+         position: absolute;
+         display: block;
+         width: 0;
+         height: 2px;
+         transition: width .3s;
+         background: #00bffb;
+
+      }
+      .link:hover::after{
+         width: 5%;
+         transition: width .3s;
+      }
+      .link:hover{
+      	color: #000;
+      	text-decoration: none;
+      }
+		.container{
+			display: flex;
+		}
+		.profile{
+			width: 30%;
+			height: 125vh;
+      		box-shadow: 0 3px 10px rgba(0,0,0,.3);
+			border-radius: 10px;
+			margin: 10px;
+		}
+		.profile .image{
+			width: 200px;
+			height: 200px;
+			margin-top: 20px;
+			margin-left: 90px;
+			box-shadow: 0 2px 6px rgba(0,0,0,.3);
+			border-radius: 50%;
+		}
+		.profile .image img{
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+		.profile .text{
+			font-size: 12px;
+			text-align: center;
+			color: #7A7575;
+			font-weight: 900;
+		}
+		.tech-skills{
+			margin: 20px;
+		}
+		.tech-skills .heading{
+			font-size: 10px;
+		}
+		.data {
+			margin-left: 30px;
+		}
+		.data ul{
+			line-height: 20px;
+			font-size: 8px;
+			font-weight: 800;
+			cursor: pointer;
+		}
+		.content{
+      	width: 68%;
+      	height: 100%;
+      	border-radius: 10px;
+      	box-shadow: 0 3px 10px rgba(0,0,0,.3);
+      	margin: 10px;
+      }
+      .career{
+      	margin: 10px;
+      }
+      #customers {
+		  border-collapse: collapse;
+		  width: 100%;
+		  border-radius: 10px;
+		}
+
+		#customers td, #customers th {
+		  border: 1px solid #ddd;
+		  padding: 8px;
+		  font-weight: 600;
+		  cursor: pointer;
+		}
+
+		#customers tr:nth-child(odd){
+			background-color: #003456;
+
+		}
+
+		#customers tr:hover
+		{
+			background-color: #ddd;
+		}
+
+		#customers th {
+		  padding-top: 12px;
+		  padding-bottom: 12px;
+		  text-align: left;
+		  background-color: #040d10a1;
+		  color: white;
+		}
+	    .certifications{
+	    	margin: 20px;
+	    }	  
+	    .declaration{
+	    	margin: 20px;
+	    }  
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="profile">
+			<div class="image">
+				<img src="./images/profile.jpg">
+			</div>
+			<div class="text">
+				<h3>Satya Saithi Manda</h3>
+				<h3>S160610@rguktsklm.ac.in</h3>
+				<h3>7989208289</h3>
+			</div>
+			<hr>
+			<div class="tech-skills">
+				<div class="heading">
+					<h1>Technical Skills :</h1>
+				</div>
+			    <div class="data">
+				<ul>
+					<h1><li class="link">Java</li></h1>
+					<h1><li class="link">HTML</li></h1>
+					<h1><li class="link">CSS</li></h1>
+					<h1><li class="link">PYTHON</li></h1>
+					<h1><li class="link">DBMS</li></h1>
+					<h1><li class="link">PHP</li></h1>
+
+				</ul>
+			   </div>
+			</div>
+			<hr>
+			<div class="tech-skills">
+			<div class="heading">
+				<h1>Hobbies :</h1>
+			</div>
+			<div class="data">
+				<ol>
+					<h4><li>Listening music</li></h4>
+					<h4><li>Browsing Internet</li></h4>
+					<h4><li>Work on Interests</li></h4>
+					<h4><li>Knowing Interesting Facts</li></h4>
+				</ol>
+			</div>
+		</div>
+	</div>
+		<div class="content">
+		<div class="career">
+			<h4>Career Objective :</h4>
+			<p>To work with a leading company and to use my analytical thinking to the best of my ability combined with perseverance,so as to contribute to organizations's growth and goal,as well as to attain my professional goal .</p>
+		</div>
+		<hr>
+		<div class="career">
+			<h4>Educational details :</h4>
+			<table id="customers">
+			  <tr>
+			    <th>Course</th>
+			    <th>Name of the Institution</th>
+			    <th>Year of Passing</th>
+			    <th>Percentage</th>
+			  </tr>
+			  <tr>
+			    <td>B.tech (C.S.E)</td>
+			    <td>Rajiv Gandhi University of Knowledge Technologies,SRIKAKULAM</td>
+			    <td>Pursuing</td>
+			    <td>--</td>
+			  </tr>
+			  <tr>
+			    <td>Intermediate (PUC)</td>
+			    <td>Rajiv Gandhi University of Knowledge Technologies,SRIKAKULAM</td>
+			    <td>2019</td>
+			    <td>85</td>
+			  </tr>
+			  <tr>
+			    <td>S.S.C</td>
+			    <td>Z.P.H.School</td>
+			    <td>2016</td>
+			    <td>97</td>
+			  </tr>
+			  
+			</table>
+
+		</div>
+		<hr>
+		
+		<div class="certifications">
+			<div class="heading">
+				<h4>Certifications :</h4>
+			</div>
+			<div class="certifi-data">
+				<ul>
+					<h4><li>E Certification on DBMS,JAVA</li></h4>
+					<h4><li>AWS Cloud Practioner Certification from aws</li></h4>
+					<h4><li>AWS Certified Solution Architect Training Certification from Vinsys</li></h4>
+					<h4><li>Android Development Certification Apssdc</li></h4>
+					<h4><li>AWS Cloud Training Certification from Apssdc</li></h4>
+					<h4><li>Robotics Workshops Certification from NIT Warnagal</li></h4>
+					<h4><li>Cyber Security Certification from CISCO</li></h4>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="declaration">
+			<div class="heading">
+				<h4>Declaration :</h4>
+			</div>
+			<div class="data">
+				<h4> I here by declare that all the information contained in this resume is in accordance with facts or truths to my knowledge. I take full responsibility for the correctness of the said information.</h4>
+		</div>
+
+	</div>
+
+</div>
+</body>
+</html>

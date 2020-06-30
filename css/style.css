@@ -15,7 +15,6 @@
 	margin :2px;
 	width:400px;
 	text-align: center;
-	height: 450px;
 }
 /*.first img,.second img,.third img,.fourth img{
 	width:100px;
@@ -29,7 +28,7 @@ img{
 	display: flex;
 	flex-direction: row-reverse;
 }
-@media screen  and  (max-width: 425px){
+@media screen and (max-width: 425px){
 	.parent{
 		flex-direction: column;
 	}
@@ -37,13 +36,14 @@ img{
 		background-color: #c45e45; 
 	}
 }
-@media screen and  (max-width: 426px) and (min-width: 768px){
+@media screen and (min-width: 425px) and (min-width: 768px){
 	.parent{
 		flex-direction: row-reverse;
 	}
 	.first,.second,.third,.fourth{
 		background-color: #c45e45;
 		border-radius: 30px;
+		flex-wrap: wrap;
 	}
 
 }
